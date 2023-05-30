@@ -45,5 +45,16 @@ component_var = margin_var * init_position
 
 margin_var_fivday_99per = margin_var * fivday_99per
 
-print(port_var)
+print('w: ', w)
+print('one_minus_w: ', one_minus_w)
+print(init_position)
+
+x = np.array([1 , 2])
+sigma = np.array([
+    [0.0025, -0.003], 
+    [-0.003, 0.0144]
+])
+
+sw = sigma.dot(x.T)
+print('hi', sw)
 
